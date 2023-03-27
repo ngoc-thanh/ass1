@@ -1,14 +1,13 @@
-import Avatar from "./components/avatar"
+// import { useState } from "react"
+// import Avatar from "./components/avatar"
+import Game from "./components/game"
+// Props: Là một đối tượng, để truyền dữ liệu từ cha xuống con, nhưng không có chiều ngược lại
+// Props: Immutable >< mutable
+// State: Trạng thái (bộ nhớ) của component - Cho phép component thay đổi khi tương tác
 const App = () => {
-  const user ={
-    name :"Thanh dn",
-    role:"student"
-  }
-  return <>
-  <h1>Hello world</h1>
-  <h2>{user.name}</h2>
-  <Avatar name ={user.name} user={user} showInfor={()=>console.log(user.name)}/>
-  </>
+  return <div>
+    <Game></Game>
+  </div>
 }
 
 export default App

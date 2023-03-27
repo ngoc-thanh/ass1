@@ -1,0 +1,37 @@
+.game-board {
+    margin: 25px;
+    width: 500px;
+    height: 500px;
+    grid-gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.game-square {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 100px;
+    background-color: #14bdac;
+    box-shadow: #0DA192 0px 8px 24px;
+}
+
+.game-square.is-x {
+    color: blue;
+}
+
+.game-square.is-o {
+    color: red;
+}
+
+.button-effect {
+    transition: transform 0.2s ease-in-out;
+}
+
+.button-effect:hover {
+    transform: scale(1.2)
+}
